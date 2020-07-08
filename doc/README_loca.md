@@ -25,19 +25,35 @@
 
 資料表:
 
-* about 基本資料
-  
-  | id        流水號 
-  | intro     簡介
-  | bio       自傳
-
-
 * admin 管理者
 
   | id        流水號 
   | acc       帳號
   | pw        密碼
 
+* exp 經歷
+
+ | id       流水號
+ | year     工作期間
+ | title    任職公司
+ | content  工作內容
+ | sh       顯示
+
+
+* title 標頭圖片
+
+ | id       流水號
+ | img      檔名     
+ | text     圖示名
+ | sh       顯示
+
+------------完成---------------
+
+* about 基本資料
+  
+  | id        流水號 
+  | intro     簡介
+  | bio       自傳
 
 * contect 聯絡方式
 
@@ -51,16 +67,6 @@
   | id        流水號 
   | school    學校
   | dept      系所
-
-
-* exp 經歷
-
- | id         流水號
- | during     工作期間
- | corp       任職公司
- | position   職位
- | job        工作內容
-
 
 * pro 作品集
   
