@@ -80,8 +80,17 @@
                 <h2>About Me</h2>
                 <hr>
             </div>
+    <?php
+    
+    $photo=new DB('photo') ;
+    $phto=$photo->find(['sh'=>1]);
+    
+    ?>
+
+
+
             <div class="row">
-                <div class="col-md-12 text-center"><img src="img/about.jpg" class="img-responsive"></div>
+                <div class="col-md-12 text-center"><img src="./img/<?=$phto['img'];?>" class="img-responsive"></div>
                 <div class="col-md-8 col-md-offset-2">
                     <div class="F text-center">
                         <p>擅長兒童插畫，從事平面設計工作。<br>正在學習網頁設計，希望未來從事網頁前端相關工作。 </p>
@@ -201,10 +210,8 @@
             </div>
         </div>
     </div>
-
-    <br>
-    <br>
-
+<br>
+<br>
     <!-- Portfolio Section -->
     <div id="portfolio">
         <div class="container">
