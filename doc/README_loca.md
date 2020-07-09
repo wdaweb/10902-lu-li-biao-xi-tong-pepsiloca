@@ -47,7 +47,14 @@
  | text     圖示名
  | sh       顯示
 
-------------完成---------------
+
+* photo 大頭照管理
+
+ | id       流水號
+ | img      檔名     
+ | text     圖示名
+ | sh       顯示
+
 
 * about 基本資料
   
@@ -55,33 +62,11 @@
   | intro     簡介
   | bio       自傳
 
-* contect 聯絡方式
-
-  | id        流水號 
-  | email     電子信箱
-  | github    github
 
 
-* edu 學歷
-  
-  | id        流水號 
-  | school    學校
-  | dept      系所
-
-* pro 作品集
-  
-  | id        流水號
-  | filename  檔名
-  | name      作品名
-  | url       作品連結網址
 
 
-* skill 技能
-  
-  | id     流水號 
-  | class  分類
-  | skill  技能
-  | level  程度
+
 
 
 

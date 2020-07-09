@@ -24,16 +24,23 @@ $db=new DB($table);
                $row['acc']=$_POST['acc'][$key];
                $row['pw']=$_POST['pw'][$key];
             break;
+            case "photo":
+               $row['text']=$_POST['text'][$key];
+               $row['sh']=($_POST['sh']==$id)?1:0;
+               // print_r($row['img']);
+            break;
             case "exp":
                $row['title']=$_POST['title'][$key];
                $row['year']=$_POST['year'][$key];
                $row['content']=$_POST['content'][$key];
                $row['sh']=(!empty($_POST['sh']) && in_array($id,$_POST['sh']))?1:0;
             break;
+            case "about":
+               $row['intro']=$_POST['intro'][$key];
+               $row['bio']=$_POST['bio'][$key];
+               $row['sh']=($_POST['sh']==$id)?1:0;
+            break;
             default:
-               if(!empty($_POST['text'])){
-                  $row['text']=$_POST['text'][$key];
-               }
                $row['sh']=(!empty($_POST['sh']) && in_array($id,$_POST['sh']))?1:0;
             break;
          }

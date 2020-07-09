@@ -10,6 +10,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="shortcut icon" href="img/logo_1.png" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
 
 
     <!-- Bootstrap -->
@@ -93,13 +94,23 @@
                 <div class="col-md-12 text-center"><img src="./img/<?=$phto['img'];?>" class="img-responsive"></div>
                 <div class="col-md-8 col-md-offset-2">
                     <div class="F text-center">
-                        <p>擅長兒童插畫，從事平面設計工作。<br>正在學習網頁設計，希望未來從事網頁前端相關工作。 </p>
+
+                    <?php
+                    $about=new DB("about");
+                    $bios=$about->all(['sh'=>1]);
+                    foreach($bios as $bio){
+                    ?>
+
+                        <p><?=$bio['intro'];?> </p>
 
                         <p class="subheading">雲林科技大學 - 工業設計系</p>
                     </div>
 
-                    <p>除了平面設計外，插畫也是我的興趣和專長。常利用工作之餘藉由閱讀相關書籍以及參加課程來增進插畫的專業技術。曾與國語日報、聯合報與慈濟人文志業配合製作了許多插畫作品。2016年也在新北市美麗永安舉辦插畫班師生聯合插畫展，2019年初更和童書作家合作成功出版了第一本繪本。經過數年在職場上的經驗，累積了許多對設計及插畫的心得以及成果，期許往後在創作上不斷有精采的作品。
+                    <p><?=$bio['bio'];?>
                     </p>
+                        <?php
+                    }
+                        ?>
 
                     <!-- 聯絡資料 -->
                     <div class="contact card mb-4 text-center">
@@ -224,6 +235,7 @@
             </div>
             <div class="row">
                 <div class="portfolio-items">
+                <!-- 開始 -->
                     <div class="col-sm-6 col-md-3 col-lg-3">
                         <div class="portfolio-item">
                             <div class="hover-bg"> <a href="http://220.128.133.15/s1090206/invoice-pepsiloca/">
@@ -235,6 +247,7 @@
                             </div>
                         </div>
                     </div>
+                    <!-- 結束 -->
                     <div class="col-sm-6 col-md-3 col-lg-3">
                         <div class="portfolio-item">
                             <div class="hover-bg"> <a href="http://220.128.133.15/s1090206/AnalogClock/">
@@ -316,6 +329,9 @@
             </div>
         </div>
     </div>
+
+    <!-- 固定右下 -->
+    <!-- <a href="#page-top" class="btn btn-info position-fixed"><i class="fas fa-angle-double-up"></i></a> -->
 
     <script type="text/javascript" src="js/jquery.1.11.1.js"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>

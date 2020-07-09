@@ -15,4 +15,11 @@ if(!empty($_FILES['img']['tmp_name'])){
 
 to("../admin.php?do=$table");
 
+//印出確認傳值
+// echo __FILE__;
+// echo "<pre>";
+// print_r($table);
+// print_r($row['img']);
+// print_r($row['id']);
+// echo "</pre>";
 ?>

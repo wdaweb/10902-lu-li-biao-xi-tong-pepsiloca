@@ -27,6 +27,7 @@ body{
 }
 #cover{
     background-color: white;
+
 }
 
 
@@ -61,12 +62,18 @@ body{
             <!--標題-->
         </a>
         <div id="ms">
-            <div id="lf" style="float:left;height:800px;">
+            <div id="lf" style="float:left;height:615px;">
                 <div id="menuput" class="dbor">
                     <!--主選單放此-->
                     <span class="t botli">後台管理選單</span>
                     <a style="color:#000; font-size:13px; text-decoration:none;" href="?do=title">
                         <div class="mainmu">圖片管理 </div>
+                    </a>
+                    <a style="color:#000; font-size:13px; text-decoration:none;" href="?do=photo">
+                        <div class="mainmu">大頭照管理 </div>
+                    </a>
+                    <a style="color:#000; font-size:13px; text-decoration:none;" href="?do=about">
+                        <div class="mainmu">自介自傳</div>
                     </a>
                     <a style="color:#000; font-size:13px; text-decoration:none;" href="?do=exp">
                         <div class="mainmu">工作經歷 </div>
@@ -84,7 +91,7 @@ body{
                     <tbody>
                         <tr>
                             <td style="width:70%;font-weight:800; border:#333 1px solid; border-radius:3px;"
-                                class="cent"><a href="?do=admin" style="color:#000; text-decoration:none;">後台管理區</a>
+                                class="cent"><a href="?do=admin" style="color:#000; "text-decoration:none;">後台管理區</a>
                             </td>
                             <td><button onclick="location.replace(&#39;api/logout.php&#39;)"
                                     style="width:99%; margin-right:2px; height:50px;">管理登出</button></td>

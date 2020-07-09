@@ -40,10 +40,18 @@ switch($table){
         $data["title"]=$_POST['title'];
         $data['year']=$_POST['year'];
         $data['content']=$_POST['content'];
+        $data['sh']=1; //顯示全部
+    break;
+    case "about":
+        $data["intro"]=$_POST['intro'];
+        $data['bio']=$_POST['bio'];
+        $data['sh']=0; //只顯示一筆
+    break;
+    case "photo":
+        $data["text"]=$_POST['text'];
         $data['sh']=1;
     break;
     default:
-        $data['text']=$_POST['text'];
         $data['sh']=1;
     break;
 }
