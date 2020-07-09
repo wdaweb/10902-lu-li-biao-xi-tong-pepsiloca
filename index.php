@@ -67,7 +67,6 @@
                         <li> <a class="page-scroll" href="#skills">Skills</a> </li>
                         <li> <a class="page-scroll" href="#resume">Resume</a> </li>
                         <li> <a class="page-scroll" href="#portfolio">Portfolio</a> </li>
-                        <!-- login 按了變下載 -->
                         <li> <a class="page-scroll" href="login.php">login</a> </li>
                     </ul>
                 </div>
