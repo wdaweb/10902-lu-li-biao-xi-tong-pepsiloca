@@ -329,8 +329,6 @@
         </div>
     </div>
 
-    <!-- 固定右下 -->
-    <!-- <a href="#page-top" class="btn btn-info position-fixed"><i class="fas fa-angle-double-up"></i></a> -->
 
     <script type="text/javascript" src="js/jquery.1.11.1.js"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
