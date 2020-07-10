@@ -40,7 +40,7 @@
                             onclick="op(&#39;#cover&#39;,&#39;#cvr&#39;,&#39;modal/about.php?table=<?=$table;?>&#39;)"
                             value="新增自介與自傳"></td>
                     <input type="hidden" name="table" value='<?=$table;?>'>
-                    <td class="cent"><input type="submit" value="修改確定"><input type="reset" value="重置">
+                    <td class="cent"><input type="submit" value="確定"><input type="reset" value="重設">
                     </td>
                 </tr>
             </tbody>
